@@ -1,51 +1,89 @@
-body{
+body {
     height: 100%;
-    width: 400px;
+    max-width: 400px;
+    width: 90%;
     border: 3px solid rgb(4, 209, 255);
     border-radius: 10px;
-    margin-top: 70px;
-    margin-left: 550px;
-    box-shadow: -15px -15px 10px 15px rgb(36, 36, 35),15px 15px 10px 15px rgb(36, 35, 34);
+    margin: 70px auto;
+    box-shadow: -10px -10px 10px 10px rgb(36, 36, 35), 10px 10px 10px 10px rgb(36, 35, 34);
     cursor: pointer;
+    padding: 10px;
 }
-#wrapper p{
-    margin-left: 25px;
+
+#wrapper {
+    text-align: center;
+}
+
+#wrapper p {
     color: antiquewhite;
 }
-#wrapper h1{
-    margin-left: 30px;
+
+#wrapper h1 {
     color: rgb(254, 154, 14);
 }
-#wrapper h1:hover{
-    text-shadow: 5px 5px 4px  red;
-    transition: .6s;
+
+#wrapper h1:hover {
+    text-shadow: 5px 5px 4px red;
+    transition: 0.6s;
 }
-#subt{
-    margin-left:150px;
+
+#subt {
     width: 100px;
     height: 40px;
-    margin-top: 20px;
+    margin: 20px auto;
     background-color: #60e662;
     border-radius: 10px;
+    display: block;
 }
-#guess{
-    font-size: 50px;
+
+#guess {
+    font-size: 40px;
     font-family: sans-serif;
     font-weight: 500;
+    color: #60e662;
+    margin: 10px 0;
 }
-#guessField{
-    margin-left: 120px;
+
+#guessField {
+    display: block;
+    margin: 10px auto;
     height: 40px;
     font-size: 20px;
-    width: 170px;
+    width: 80%;
+    max-width: 170px;
     text-align: center;
     background-color: rgb(247, 242, 194);
     border-radius: 10px;
 }
-.resultParas{
-margin-left: 100px;
+
+.resultParas {
+    text-align: center;
 }
-#guess{
-    margin-left: 20px;
-    color: #60e662;
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+    body {
+        margin-top: 30px;
+        box-shadow: -5px -5px 5px 5px rgb(36, 36, 35), 5px 5px 5px 5px rgb(36, 35, 34);
+        padding: 5px;
+    }
+
+    #wrapper h1 {
+        font-size: 22px;
+    }
+
+    #guess {
+        font-size: 30px;
+    }
+
+    #guessField {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    #subt {
+        width: 80px;
+        height: 35px;
+        font-size: 14px;
+    }
 }
